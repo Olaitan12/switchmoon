@@ -13,6 +13,7 @@ import { CtaComponent } from './cta/cta.component';
 import { FooterComponent } from './footer/footer.component';
 import { NagivationComponent } from './nagivation/nagivation.component';
 import { HeaderComponent } from './header/header.component';
+import { ConfigService } from './config.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
